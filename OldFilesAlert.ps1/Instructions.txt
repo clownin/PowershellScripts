@@ -1,0 +1,9 @@
+1. Build a $PSCreditionals file using the password.
+	- Read-Host "Enter Password" -AsSecureString |  ConvertFrom-SecureString | Out-File C:\PSCredetionals.txt
+
+2. Modify the script for the right message & configuration. 
+	- Modify Variables for Account being used
+	- Make sure to set permissions Set-RemoteExecutionPolicy RemoteSigned both x86 and x64 powershells.
+
+3. Set to Scheduled Task
+	- Set to run Daily around 8:00 
